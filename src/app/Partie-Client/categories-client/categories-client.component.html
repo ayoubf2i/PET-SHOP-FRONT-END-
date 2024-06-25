@@ -1,0 +1,142 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<body style="margin-top: 4%">
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Catégorie : Chiens</h2>
+        <p>Chiens à Adopter : Parcourez notre Collection</p>
+      </header>
+
+      <div class="row gy-4" data-aos="fade-left">
+        <div
+          class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngFor="let chien of allChiens"
+          style="margin-bottom: 2%"
+        >
+          <div class="box">
+            <span class="special" *ngIf="chien.special">Special</span>
+            <span class="promotion" *ngIf="chien.promotion">promotion</span>
+            <span id="new" *ngIf="lasteChiens.includes(chien.idPet.toString())">New</span>
+            <h3 style="color: #07d5c0">{{ chien.categorie.nomCategorie }}</h3>
+            <div>{{ chien.nomPet }}</div>
+
+            <div class="price"><sup>MAD</sup>{{ chien.prixPet }}</div>
+            <img
+              [src]="'../../../assets/images/' + chien.imagePet"
+              class="img-fluid"
+              alt=""
+            />
+            <p>{{ chien.descriptionPet }}</p>
+            <a
+              (click)="
+                acheter(chien.idPet.toString(), chien.categorie.nomCategorie)
+              "
+              style="cursor: pointer"
+              class="btn-buy"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Catégorie : Chats</h2>
+        <p>Trouvez Votre Compagnon Ronronnant : Chats Disponibles</p>
+      </header>
+
+      <div class="row gy-4" data-aos="fade-left">
+        <div
+          class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngFor="let chat of allChats"
+          style="margin-bottom: 2%"
+        >
+          <div class="box">
+            <span class="promotion" *ngIf="chat.promotion">promotion</span>
+            <span class="special" *ngIf="chat.special">Special</span>
+            <span id="new" *ngIf="lasteChats.includes(chat.idPet.toString())">New</span>
+
+            <h3 style="color: #07d5c0">{{ chat.categorie.nomCategorie }}</h3>
+            <div>{{ chat.nomPet }}</div>
+
+            <div class="price"><sup>MAD</sup>{{ chat.prixPet }}</div>
+            <img
+              [src]="'../../../assets/images/' + chat.imagePet"
+              class="img-fluid"
+              alt=""
+              style="width: 80%"
+            />
+            <p>{{ chat.descriptionPet }}</p>
+            <a
+              (click)="
+                acheter(chat.idPet.toString(), chat.categorie.nomCategorie)
+              "
+              class="btn-buy"
+              style="cursor: pointer"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Catégorie : Accessoire</h2>
+        <p>Produits pour Animaux de Compagnie : Parcourez notre Collection</p>
+      </header>
+
+      <div class="row gy-4" data-aos="fade-left">
+        <div
+          class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngFor="let prod of allProduits"
+          style="margin-bottom: 2%"
+        >
+          <div class="box">
+            <span class="promotion" *ngIf="prod.promotion">promotion</span>
+            <span id="new" *ngIf="lastetProduct.includes(prod.idProduit.toString())">New</span>
+
+            <h3 style="color: #07d5c0">{{ prod.categorie.nomCategorie }}</h3>
+            <div>{{ prod.nomProduit }}</div>
+            <div class="price"><sup>MAD</sup>{{ prod.prixProduit }}</div>
+            <img
+              [src]="'../../../assets/images/' + prod.imageProduit"
+              class="img-fluid"
+              alt=""
+            />
+            <p>{{ prod.descriptionProduit }}</p>
+            <a
+              (click)="
+                acheter(prod.idProduit.toString(), prod.categorie.nomCategorie)
+              "
+              style="cursor: pointer"
+              class="btn-buy"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+</body>

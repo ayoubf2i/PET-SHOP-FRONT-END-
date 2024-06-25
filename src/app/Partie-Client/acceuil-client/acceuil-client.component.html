@@ -1,0 +1,554 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 d-flex flex-column justify-content-center">
+          <h1 style="margin-left: 27px; font-size: 55px">
+            Bienvenue sur PetShop Enligne !
+          </h1>
+          <h5 style="margin-left: 55px; margin-top: 10px">
+            Votre référence professionnelle pour l'achat de chiens, de chats et
+            d'accessoires haut de gamme : Découvrez notre sélection
+            minutieusement choisie pour offrir à vos animaux de compagnie le
+            meilleur confort et style
+          </h5>
+          <div>
+            <div class="text-center text-lg-start">
+              <a
+                routerLink="/client/categories-client"
+                class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center"
+              >
+                <span>COMMENCER</span>
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="content" style="border-radius: 10px">
+              <h3>A propos</h3>
+              <h2>PetShop est votre plateforme en ligne</h2>
+              <p>
+                pour trouver et adopter le compagnon parfait parmi une variété
+                de chiens et de chats adorables. En plus de proposer une
+                sélection variée d'animaux de compagnie, nous offrons également
+                une gamme complète d'accessoires de qualité pour répondre à tous
+                les besoins de vos nouveaux amis à fourrure.
+              </p>
+              <div class="text-center text-lg-start">
+                <a
+                  routerLink="/client/apropos-client"
+                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                >
+                  <span>Voir Plus...</span>
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 d-flex align-items-center"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img
+              src="../../../assets/images/image-acceuil-apropos.jpg"
+              class="img-fluid"
+              alt="animals"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+  </main>
+  <!-- End #main -->
+  <!-- ======= Values Section ======= -->
+  <section id="values" class="values">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Nos Catégories</h2>
+        <p>Explorez nos Compagnons et Produits</p>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="box">
+            <img
+              src="../../../assets/images/chat-category.jpg"
+              class="img-fluid"
+              alt=""
+              style="width: 78%"
+            />
+            <h3>Chats</h3>
+            <p>
+              Parcourez notre collection de chats adorables prêts à trouver leur
+              foyer pour la vie. Chaque chat est unique et attend avec
+              impatience de devenir votre nouveau compagnon.
+            </p>
+            <a
+              routerLink="/client/categories-client"
+              style="color: rgb(226, 89, 43); margin-left: 60%"
+              >Voir Plus ...</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="box">
+            <img
+              src="../../../assets/images/chien-category.jpg"
+              class="img-fluid"
+              alt=""
+              style="margin-bottom: 5%"
+            />
+            <h3>Chiens</h3>
+            <p>
+              Trouvez votre compagnon fidèle parmi notre sélection de chiens de
+              haute qualité, élevés avec amour et soin pour vous offrir une
+              expérience d'adoption inoubliable
+            </p>
+            <a
+              routerLink="/client/categories-client"
+              style="color: rgb(226, 89, 43); margin-left: 60%"
+              >Voir Plus ...</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <div class="box">
+            <img
+              src="../../../assets/images/accessoire-category.jpg"
+              class="img-fluid"
+              alt=""
+              style="margin-bottom: 5%"
+            />
+            <h3>Accessoire</h3>
+            <p>
+              Découvrez une gamme complète de produits pour répondre aux besoins
+              de vos nouveaux amis à fourrure. De la nourriture premium aux
+              accessoires essentiels.
+            </p>
+            <a
+              routerLink="/client/categories-client"
+              style="color: rgb(226, 89, 43); margin-left: 60%"
+              >Voir Plus ...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Values Section -->
+
+  <!-- ======= Features Section ======= -->
+  <section id="features" class="features">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Pourquoi Nous Choisir ?</h2>
+        <p>Découvrir Nos Avantages</p>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="../../../assets/images/avantages.jpg"
+            class="img-fluid"
+            alt=""
+            style="border-radius: 10px"
+          />
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+          <div class="row align-self-center gy-4">
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Expertise en Adoption</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Sélection de Qualité</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Variété de Produits</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Service Client Dévoué</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Livraison Rapide et Suivi</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Engagement envers le Bien-être Animal</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / row -->
+    </div>
+  </section>
+  <!-- End Features Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Nouveaux</h2>
+        <p>Nouveautés à ne pas manquer !</p>
+      </header>
+
+      <div
+        class="row gy-4 portfolio-container"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="col-lg-4 col-md-6 portfolio-item filter-app"
+          *ngFor="let chat of latestChats"
+          style="margin-bottom: 2%"
+        >
+          <div class="portfolio-wrap">
+            <span id="new"><span id="spn">New</span></span>
+            <img
+              [src]="'../../../assets/images/' + chat.imagePet"
+              class="img-fluid"
+              alt=""
+            />
+            <div class="portfolio-info">
+              <h4>{{ chat.categorie.nomCategorie }}</h4>
+              <p>{{ chat.nomPet }}</p>
+              <br />
+              <p>{{ chat.descriptionPet }}</p>
+
+              <div class="portfolio-links">
+                <a
+                  style="cursor: pointer"
+                  (click)="
+                    acheter(chat.idPet.toString(), chat.categorie.nomCategorie)
+                  "
+                  data-gallery="portfolioGallery"
+                  class="portfokio-lightbox"
+                  title="Acheter"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+                <a
+                  style="cursor: pointer"
+                  title="Catégories"
+                  routerLink="/client/categories-client"
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6 portfolio-item filter-app"
+          *ngFor="let chien of latestChiens"
+          style="margin-bottom: 2%"
+        >
+          <div class="portfolio-wrap">
+            <span id="new"><span id="spn">New</span></span>
+            <img
+              [src]="'../../../assets/images/' + chien.imagePet"
+              class="img-fluid"
+              alt=""
+            />
+            <div class="portfolio-info">
+              <h4>{{ chien.categorie.nomCategorie }}</h4>
+              <p>{{ chien.nomPet }}</p>
+              <br />
+              <p>{{ chien.descriptionPet }}</p>
+
+              <div class="portfolio-links">
+                <a
+                  style="cursor: pointer"
+                  (click)="
+                    acheter(
+                      chien.idPet.toString(),
+                      chien.categorie.nomCategorie
+                    )
+                  "
+                  data-gallery="portfolioGallery"
+                  class="portfokio-lightbox"
+                  title="Acheter"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+                <a
+                  style="cursor: pointer"
+                  title="Catégories"
+                  routerLink="/client/categories-client"
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 portfolio-item filter-app"
+          *ngFor="let prodcut of lastetProduct"
+          style="margin-bottom: 2%"
+        >
+          <div class="portfolio-wrap">
+            <span id="new"><span id="spn">New</span></span>
+            <img
+              [src]="'../../../assets/images/' + prodcut.imageProduit"
+              class="img-fluid"
+              alt=""
+            />
+            <div class="portfolio-info">
+              <h4>{{ prodcut.categorie.nomCategorie }}</h4>
+              <p>{{ prodcut.nomProduit }}</p>
+              <br />
+              <p>{{ prodcut.descriptionProduit }}</p>
+
+              <div class="portfolio-links">
+                <a
+                  style="cursor: pointer"
+                  (click)="
+                    acheter(
+                      prodcut.idProduit.toString(),
+                      prodcut.categorie.nomCategorie
+                    )
+                  "
+                  data-gallery="portfolioGallery"
+                  class="portfokio-lightbox"
+                  title="Acheter"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+                <a
+                  style="cursor: pointer"
+                  title="Catégories"
+                  routerLink="/client/categories-client"
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container" data-aos="fade-up">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="fa-regular fa-face-smile-beam"></i>
+            <div>
+              <span class="purecounter" *ngIf="countUsers !== undefined">{{
+                countUsers
+              }}</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="fa-solid fa-cat" style="color: #ffd43b"></i>
+            <div #counter>
+              <span class="purecounter" *ngIf="countCats !== undefined">{{
+                countCats
+              }}</span>
+              <p>Chats</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="fa-solid fa-dog" style="color: #b197fc"></i>
+            <div>
+              <span class="purecounter" *ngIf="countDogs !== undefined">{{
+                countDogs
+              }}</span>
+              <p>Chiens</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="fa-solid fa-cart-shopping" style="color: #63e6be"></i>
+            <div>
+              <span class="purecounter" *ngIf="countProducts !== undefined">{{
+                countProducts
+              }}</span>
+              <p>Produits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Plus Achetés</h2>
+        <p>
+          Découvrez les Incontournables les Plus Plébiscités par Nos Clients
+        </p>
+      </header>
+
+      <div class="row gy-4" data-aos="fade-left">
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngIf="mostPopularChien"
+        >
+          <div class="box">
+            <h3 style="color: #07d5c0">{{ mostPopularChien.categorie }}</h3>
+            <div class="price">{{ mostPopularChien.name }}</div>
+            <img
+              [src]="'../../../assets/images/' + mostPopularChien.imageUrl"
+              class="img-fluid"
+              alt=""
+            />
+            <p>
+              {{ mostPopularChien.description }}
+            </p>
+            <a
+              (click)="acheter(mostPopularChien.id, mostPopularChien.categorie)"
+              class="btn-buy"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          *ngIf="mostPopularChat"
+        >
+          <div class="box">
+            <h3 style="color: #ff901c">{{ mostPopularChat.categorie }}</h3>
+            <div class="price">{{ mostPopularChat.name }}</div>
+            <img
+              [src]="'../../../assets/images/' + mostPopularChat.imageUrl"
+              class="img-fluid"
+              alt=""
+              style="width: 73%"
+            />
+            <p>
+              {{ mostPopularChat.description }}
+            </p>
+            <a
+              class="btn-buy"
+              (click)="acheter(mostPopularChat.id, mostPopularChat.categorie)"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          *ngIf="mostPopularProduct"
+        >
+          <div class="box">
+            <h3 style="color: #ff0071">{{ mostPopularProduct.category }}</h3>
+            <div class="price">{{ mostPopularProduct.name }}</div>
+            <img
+              [src]="'../../../assets/images/' + mostPopularProduct.imageUrl"
+              class="img-fluid"
+              alt=""
+            />
+            <p>
+              {{ mostPopularProduct.description }}
+            </p>
+            <a
+              class="btn-buy"
+              (click)="
+                acheter(mostPopularProduct.id, mostPopularProduct.category)
+              "
+            >
+              Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+  <!--back au to p-->
+  <button
+    class="scroll-to-top-button"
+    (click)="scrollToTop()"
+    *ngIf="showButton"
+  >
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</body>

@@ -1,0 +1,164 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<body>
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 right" style="margin-top: 2%">
+          <div class="email-form input-box">
+            <div class="">
+              <div class="section-header">
+                <h1 style="font-size: 22px">
+                  <i class="fa fa-pen"></i> Inscrivez-vous !
+                </h1>
+              </div>
+              <div class="card-body">
+                <div id="form">
+                  <div style="display: flex">
+                    <div
+                      class="input-field"
+                      style="display: inline-block; margin-right: 10px"
+                    >
+                      <input type="text" class="input" id="nom" required="" [(ngModel)]="userInfos.userNom" />
+                      <label for="nomcomplet">Nom Complet </label>
+                    </div>
+                 <div class="input-field">
+                    <input
+                      type="text"
+                      class="input"
+                      id="tel"
+                      required=""
+                      [(ngModel)]="userInfos.userEmail"
+                    />
+                    <label for="pass">Email</label>
+                  </div>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="number"
+                      class="input"
+                      id="tel"
+                      required=""
+                      [(ngModel)]="userInfos.userTelephone"
+                    />
+                    <label for="pass">Telephone</label>
+                  </div>
+                  
+                  <div class="input-field">
+                    <textarea
+                      class="input"
+                      id="message"
+                      required=""
+                      placeholder="Adresse.."
+                      [(ngModel)]="userInfos.userAdresse"
+                    ></textarea>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="input"
+                      id="pass"
+                      required=""
+                      [(ngModel)]="userInfos.userMotDePasse"
+                    />
+                    <label for="pass">Mot de passe</label>
+                  </div>
+                </div>
+                <!--dyl form-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="info input-box">
+            <div class="card-body">
+              <div id="form">
+                <div class="input-field">
+                  <input
+                    type="number"
+                    class="input"
+                    id="usercard"
+                    required=""
+
+                    [(ngModel)]="userInfos.userNumCart"
+                  />
+                  <label for="usercard"> Numero de carte de paiement</label>
+                </div>
+                <label for="" style="margin-left: 10px; margin-top: 10px"
+                  >Date d'expiration :</label
+                >
+
+                <div style="display: flex">
+                  <div
+                    class="input-field"
+                    style="display: inline-block; margin-right: 10px ;width: 50%;"
+                  >
+                    <select id="mois" class="input" required="" [(ngModel)]="userInfos.moisExpCart">
+                      <option value="" disabled selected>Mois</option>
+                       <option value="1">01</option>
+                       <option value="2">02</option>
+                      <option value="3">03</option>
+                      <option value="4">04</option>
+                      <option value="5">05</option>
+                      <option value="6">06</option>
+                      <option value="7">07</option>
+                      <option value="8">08</option>
+                      <option value="9">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <!-- Add more options for other months as needed -->
+                    </select>
+                  </div>
+
+                  <div class="input-field" style="display: inline-block;width: 50%;">
+                    <select id="mois" class="input" required="" [(ngModel)]="userInfos.anneeExpCart">
+                      <option value="" disabled selected>Année</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                      <option value="2031">2031</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="number"
+                    class="input"
+                    id="cvc"
+                    required=""
+                    name="cvc"
+                    [(ngModel)]="userInfos.userCvc"
+                  />
+                  <label for="cvc">CVC</label>
+                </div>
+                <br />
+                <div class="input-field">
+                  <input type="submit" class="submit" value=" S'inscrire" (click)="inscrire()"/>
+                </div>
+
+                <div class="signin">
+                  <span
+                    >Vous avez déjà un compte ?
+                    <a
+                      routerLink="/client/sidentifier-client"
+                      id="Inscrivez-vous"
+                      >Connectez-vous</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <!--dyl form-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,136 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<body>
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 right" style="margin-top: 2%">
+          <div class="email-form input-box">
+            <div class="">
+              <div class="section-header">
+                <h1 style="font-size: 22px">
+                  <i class="fa fa-user"></i> Informations Personnelle
+                </h1>
+              </div>
+              <div class="card-body">
+                <div id="form">
+                  <div style="display: flex">
+                    <div
+                      class="input-field"
+                      style="display: inline-block; margin-right: 10px"
+                    >
+
+                      <input type="text" class="input" id="nom" required="" [(ngModel)]="userInfo.nom"/>
+                      <label for="">nom</label>
+                    </div>
+                    <div
+                      class="input-field"
+                      style="display: inline-block; margin-right: 10px"
+                    >
+
+                      <input type="text" class="input" id="nom" required="" [(ngModel)]="userInfo.email"/>
+                      <label for="">email</label>
+                    </div>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="tel"
+                      class="input"
+                      id="tel"
+                      required=""
+                      [(ngModel)]="userInfo.telephone"                    
+                      />
+
+                    <label for="pass">Telephone</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea
+                      class="input"
+                      id="message"
+                      required=""
+                      name="message"
+                      [(ngModel)]="userInfo.adresse" 
+                    ></textarea>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="input"
+                      id="pass"
+                      required=""
+                      name="password"
+                      [(ngModel)]="userInfo.motDePasse"                    />
+                    <label for="pass">Mot de passe</label>
+                  </div>
+                </div>
+                <!--dyl form-->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="info input-box">
+            <div class="card-body">
+              <div id="form">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="input"
+                    id="entreprise"
+                    required=""
+                    name="entreprise"
+                    [(ngModel)]="serviceUser.userAuthObject.userNumCart"
+                    readonly
+                  />
+                </div>
+                
+                <label for="" style="margin-left: 10px; margin-top: 10px">Date d'expiration :</label>
+                
+                <div style="display: flex">
+                  <div class="input-field" style="display: inline-block; margin-right: 10px; width: 50%;">
+                    <select id="mois" class="input" required="">
+                      <option value="" disabled selected>{{serviceUser.userAuthObject.moisExpCart}}
+                      </option>
+                      <!-- Ajoutez vos options de mois ici -->
+                    </select>
+                  </div>
+                
+                  <div class="input-field" style="display: inline-block; width: 50%;">
+                    <select id="annee" class="input" required="">
+                      <option value="" disabled selected>{{serviceUser.userAuthObject.anneeExpCart}}</option>
+                      <!-- Ajoutez vos options d'année ici -->
+                    </select>
+                  </div>
+                </div>
+                <br>
+                
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="input"
+                    id="cvc"
+                    required=""
+                    name="cvc"
+                    [(ngModel)]="serviceUser.userAuthObject.userCvc"
+                    readonly
+                  />
+                </div>
+                
+                <br />
+                <div class="input-field">
+                  <input type="submit" class="submit" value="Modifier" (click)="updateUser()" />
+                </div>
+
+
+              </div>
+              <!--dyl form-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

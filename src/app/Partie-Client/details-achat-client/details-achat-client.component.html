@@ -1,0 +1,139 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<body>
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      
+      <div *ngIf="pet!=null && product==null" class="row">
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <img
+              [src]="'../../../assets/images/'+pet.imagePet"
+              style="width: 100%; margin-top: 5%"
+              alt=""
+            />
+
+            <h3 *ngIf="pet.categorie.nomCategorie=='Chats'" style="color: #e4ca47; text-align: center; margin-top: 3%">
+              {{pet.nomPet}}
+            </h3>
+
+            <h3 *ngIf="pet.categorie.nomCategorie=='Chiens'" style="color: #e4ca47; text-align: center; margin-top: 3%">
+              {{pet.nomPet}}
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-lg-7 right" style="margin-top: 2%">
+          <div class="email-form input-box">
+            <div class="">
+              <div class="section-header">
+                <h1 style="font-size: 22px">
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #4154f1"
+                  ></i>
+                  Acheter Maintenant
+                </h1>
+              </div>
+              <h6 style="color: #4154f1">Catégorie :</h6>
+              <p style="font-size: 15px">{{pet.categorie.nomCategorie}}</p>
+              <h6 style="color: #4154f1">Description :</h6>
+              <p style="font-size: 15px">
+                {{pet.descriptionPet}}
+              </p>
+              <h6 style="color: #4154f1">Prix :</h6>
+              <p style="font-size: 19px">{{pet.prixPet}}$</p>
+              <h6 style="color: #4154f1">Quantité :</h6>
+              <p style="font-size: 19px">
+                {{ counter }}
+                <button class="counter" (click)="quantitePlus()">
+                  <i class="fa fa-plus"></i>
+                </button>
+                <button class="counter" (click)="quantiteminus()">
+                  <i class="fa fa-minus"></i>
+                </button>
+              </p>
+
+              <div class="input-field">
+                <input
+                  type="submit"
+                  class="submit"
+                  value="Ajouter au Pannier (Pet)"
+                  (click)="ajouterPetPannier()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngIf="product!=null && pet==null" class="row">
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <img
+              [src]="'../../../assets/images/'+product.imageProduit"
+              style="width: 100%; margin-top: 5%"
+              alt=""
+            />
+
+            <h3 style="color: #e4ca47; text-align: center; margin-top: 3%">
+              {{product.nomProduit}}
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-lg-7 right" style="margin-top: 2%">
+          <div class="email-form input-box">
+            <div class="">
+              <div class="section-header">
+                <h1 style="font-size: 22px">
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #4154f1"
+                  ></i>
+                  Acheter Maintenant
+                </h1>
+              </div>
+              <h6 style="color: #4154f1">Catégorie :</h6>
+              <p style="font-size: 15px">{{product.categorie.nomCategorie}}</p>
+              <h6 style="color: #4154f1">Description :</h6>
+              <p style="font-size: 15px">
+                {{product.descriptionProduit}}
+              </p>
+              <h6 style="color: #4154f1">Prix :</h6>
+              <p style="font-size: 19px">{{product.prixProduit}}$</p>
+              <h6 style="color: #4154f1">Quantité :</h6>
+              <p style="font-size: 19px">
+                {{ counter }}
+                <button class="counter" (click)="quantitePlus()">
+                  <i class="fa fa-plus"></i>
+                </button>
+                <button class="counter" (click)="quantiteminus()">
+                  <i class="fa fa-minus"></i>
+                </button>
+              </p>
+
+              <div class="input-field">
+                <input
+                  type="submit"
+                  class="submit"
+                  value="Ajouter au Pannier (Product)"
+                  (click)="ajouterProductPannier()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</body>

@@ -1,0 +1,71 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<body>
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="info">
+            <img
+              src="../../../assets/images/image-sidentifier.jpg"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-6 right" style="margin-top: 2%">
+          <div class="email-form input-box">
+            <div class="">
+              <div class="section-header">
+                <h1 style="font-size: 22px">
+                  <i class="fa fa-lock"></i> Se connecter
+                </h1>
+              </div>
+
+              <div class="input-field">
+                <input
+                  type="text"
+                  class="input"
+                  id="email"
+                  required=""
+                  [(ngModel)]="Infos.userEmail"
+                />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field" id="password1">
+                <input
+                  type="password"
+                  class="input"
+                  id="pass"
+                  required=""
+                  [(ngModel)]="Infos.userMotDePasse"
+                />
+                <label for="pass">Mot de passe</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="submit"
+                  class="submit"
+                  value=" Connecter"
+                  routerLink="/chat"
+                  (click)="connecter()"
+                />
+              </div>
+              <div class="signin">
+                <span
+                  >Vous n’avez pas de compte?
+                  <a routerLink="/client/sinscrire-client"
+                    >Inscrivez-vous</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

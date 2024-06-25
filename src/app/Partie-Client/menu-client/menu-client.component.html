@@ -1,0 +1,63 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ======= Header ======= -->
+  <header style="background-color: rgba(161, 234, 234, 0.511);" id="header" class="header">
+    <div
+      class="container-fluid container-xl d-flex align-items-center justify-content-between"
+    >
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="" />
+        <span>PETSHOPS</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto"   routerLink="/client/acceuil-client" >Acceuil</a></li>
+          <li><a class="nav-link scrollto"  routerLink="/client/apropos-client" >A propos</a></li>
+          <li><a class="nav-link scrollto" routerLink="/client/categories-client" >Categories</a></li>
+          <li>
+            <a class="nav-link scrollto" routerLink="/client/specials-client" >Animaux spéciaux</a>
+          </li>
+          <li >
+            <a class="contacternous text-white scrollto"  routerLink="/client/contact-client"
+              >Contacter nous !</a
+            >
+          </li>
+          <li>
+            <button type="button" class="btn useruser" routerLink="/client/sidentifier-client">
+              <i class="fas fa-user"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn cardcard" (click)="goToCard()">
+            <i class="fa fa-cart-shopping"></i>
+            </button>
+          </li>
+          <li *ngIf="serviceUser.userAuthObject!=null">
+            <button type="button" class="btn cardcard" (click)="logout()">
+              <i class="fa fa-sign-out"></i> <!-- Utilisation de l'icône de déconnexion de FontAwesome -->
+            </button>
+          </li>
+          
+        </ul>
+        <i class="fa fa-list mobile-nav-toggle " id="toggleButton"></i>
+      
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->

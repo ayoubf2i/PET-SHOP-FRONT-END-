@@ -1,0 +1,83 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<body style="margin-top: 4%">
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h2>Animaux Uniques : Nos Compagnons Spéciaux</h2>
+        <p>
+          Découvrez notre sélection spéciale d'animaux de compagnie qui ont des
+          besoins particuliers.
+        </p>
+      </header>
+
+      <div class="row gy-4" data-aos="fade-left" style="margin-bottom: 2%">
+        <div
+          class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngFor="let chats of specialchats"
+        >
+          <div class="box">
+            <span class="special">Special</span>
+
+            <h3 style="color: #07d5c0">{{ chats.categorie.nomCategorie }}</h3>
+            <div class="price" style="font-size: 12px">{{ chats.nomPet }}</div>
+            <img
+              [src]="'../../../assets/images/' + chats.imagePet"
+              class="img-fluid"
+              alt=""
+            />
+            <p class="price"><sup>MAD</sup>{{ chats.prixPet }}</p>
+
+            <p>{{ chats.descriptionPet }}</p>
+            <a
+              style="cursor: pointer"
+              (click)="
+                acheter(chats.idPet.toString(), chats.categorie.nomCategorie)
+              "
+              class="btn-buy"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-4" data-aos="fade-left" style="margin-bottom: 2%">
+        <div
+          class="col-lg-3 col-md-6"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          *ngFor="let chiens of specialchiens"
+        >
+          <div class="box">
+            <span class="special">Special</span>
+
+            <h3 style="color: #07d5c0">{{ chiens.categorie.nomCategorie }}</h3>
+            <div class="price" style="font-size: 12px">{{ chiens.nomPet }}</div>
+            <img
+              [src]="'../../../assets/images/' + chiens.imagePet"
+              class="img-fluid"
+              alt=""
+            />
+            <p class="price">{{ chiens.prixPet }}</p>
+            <p>{{ chiens.descriptionPet }}</p>
+            <a
+              style="cursor: pointer"
+              (click)="
+                acheter(chiens.idPet.toString(), chiens.categorie.nomCategorie)
+              "
+              class="btn-buy"
+              >Acheter
+              <i class="fa-solid fa-cart-shopping" style="color: #6381e6dd"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+</body>

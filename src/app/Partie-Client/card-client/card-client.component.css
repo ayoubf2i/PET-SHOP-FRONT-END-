@@ -1,0 +1,77 @@
+body {
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 4%;
+
+}
+
+.container{
+    margin-top: 4%;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #414df131;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #0073f74c;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    padding: 8px 12px;
+}
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header h1 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+.myspan{
+    border: 1px solid rgba(65, 65, 255, 0.772);
+     border-radius:   50px; 
+     background-color: aliceblue;
+     padding: 4px;
+}
+.valider:hover{
+    background-color: aliceblue;
+        border: 2px solid rgb(73, 73, 255);
+        color: #4154f1;
+}
+.valider {
+   
+    border-radius: 50px;
+    margin-top: 2%;
+
+    font-weight: bold;
+        background-color: #4154f1;
+      
+    color: #ffffff;
+  
+}
